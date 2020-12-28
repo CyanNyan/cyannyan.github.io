@@ -877,6 +877,7 @@ input:checked + label span:last-child {
 }
 
 .services-heading h1:before {
+  display: none;
   content: "";
   position: absolute;
   top: -8px;
@@ -1049,11 +1050,11 @@ input:checked + label span:last-child {
   margin-right: auto;
   margin-bottom: 20px;
   width:  70%;
-  -webkit-filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -o-filter: grayscale(100%); */
+  /* filter: grayscale(100%); */
   -webkit-transition: all linear .3s;
   -moz-transition: all linear .3s;
   -ms-transition: all linear .3s;
@@ -1071,6 +1072,7 @@ input:checked + label span:last-child {
 }
 
 .about-me .hvr-icon-hang:before {
+  display: none;
   content: "\f0ab";
   position: absolute;
   right: 8px;
@@ -1667,7 +1669,9 @@ ul.experience-chart h4 {
 }
 
 .contact-holder {
-  margin-top: 120px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   z-index: 2;
 }
@@ -1681,6 +1685,7 @@ ul.experience-chart h4 {
 }
 
 .contact-holder h1:before {
+  display: none;
   content: "";
   position: absolute;
   top: -8px;
@@ -1749,14 +1754,14 @@ textarea.form-control::-webkit-input-placeholder,
   display: inline-flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 210px;
+  /* width: 210px; */
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .footer-icons div {
@@ -1765,6 +1770,7 @@ textarea.form-control::-webkit-input-placeholder,
 
 .footer-icons a,
 .to-top a {
+  padding:10px;
   text-decoration: none;
   color: #313131;
   font-size: 17px;
@@ -1779,7 +1785,7 @@ textarea.form-control::-webkit-input-placeholder,
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: #fff;
-  padding: 7px;
+  padding: 30px;
 }
 
 .footer-icons .fa:hover {

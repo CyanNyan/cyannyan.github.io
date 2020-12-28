@@ -188,7 +188,7 @@
 <!-- =============================
       Start Services
     =============================== -->
-<section class="services" id="service">
+<!-- <section class="services" id="service">
   {{ if $data.homepage.service.enable }}
   {{ with $data.homepage.service }}
   <div class="container">
@@ -236,7 +236,8 @@
   </div>
   {{ end }}
   {{ end }}
-</section>
+</section> -->
+ <!-- TODO: add back services -->
 <!-- =============================
        End Services
     =============================== -->
@@ -250,7 +251,7 @@
     {{ with $data.homepage.about }}
     <div class="row about-me-holder">
       <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
-        <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+        <div class="text-holder">
           <h1>{{ .title | safeHTML }}</h1>
           <p>{{ .content | markdownify | emojify }}</p>
           {{ if .button.enable }}
@@ -270,7 +271,7 @@
     {{ end }}
     {{ end }}
 
-    <div class="row experience-skill">
+    <!-- <div class="row experience-skill">
       {{ if $data.homepage.experience.enable }}
       {{ with $data.homepage.experience }}
       <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
@@ -311,17 +312,18 @@
       </div>
       {{ end }}
       {{ end }}
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- =============================
       End About Me
     =============================== -->
 
+    
 <!-- =============================
       Start Certification
     =============================== -->
-<section class="certifications" id="certification">
+<!-- <section class="certifications" id="certification">
   {{ if $data.homepage.certification.enable }}
   {{ with $data.homepage.certification }}
   <div class="container">
@@ -338,9 +340,9 @@
               <div class="certification-label">
                 <img class="certification-img img-fluid" src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
                 <h4 style="margin-top:10px">{{ .name | markdownify }}</h4>
-              </div>
+              </div> -->
               <!--<div class="certification-label">{{ .name | markdownify }}</div>-->
-            </div>
+            <!-- </div>
             {{ end }}
           </div>
         </div>
@@ -350,7 +352,7 @@
   {{ end }}
   {{ end }}
 
-</section>
+</section> -->
 <!-- =============================
        End Certifications
     =============================== -->
@@ -358,7 +360,7 @@
 <!-- =============================
        Start Portfolio
     =============================== -->
-{{ if $data.homepage.portfolio.enable }}
+<!-- {{ if $data.homepage.portfolio.enable }}
 {{ with $data.homepage.portfolio }}
 <section class="portfolio" id="portfolio">
   <div class="container-fluid text-center">
@@ -400,7 +402,7 @@
   </div>
 </section>
 {{ end }}
-{{ end }}
+{{ end }} -->
 <!-- =============================
        End Portfolio
     =============================== -->
@@ -408,7 +410,7 @@
 <!-- =============================
        Start Testimonials
     =============================== -->
-{{ if $data.homepage.testimonial.enable }}
+<!-- {{ if $data.homepage.testimonial.enable }}
 {{ with $data.homepage.testimonial }}
 <section class="testimonials" id="testimonial">
   <div class="container">
@@ -446,7 +448,7 @@
   </div>
 </section>
 {{ end }}
-{{ end }}
+{{ end }} -->
 <!-- =============================
        End Testimonials
     =============================== -->
@@ -458,9 +460,18 @@
 <section class="contact" id="contact">
   <div class="container">
     <div class="row">
-      <div class="contact-holder col-lg-8 offset-lg-2 col-sm-8 offset-sm-2">
+      <div class="contact-holder">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ $data.homepage.contact.title }}</h1>
-        <form method="POST" action="{{ .Site.Params.contact_form_action }}" data-toggle="validator">
+          <div class="footer-icons">
+            <div><a href="https://twitter.com/CyanNyan6"><i class="fa fa-twitter fa-5x"></i></a></div>
+            <div><a href="https://www.youtube.com/channel/UC9wbdkwvYVSgKtOZ3Oov98g"><i class="fa fa-youtube fa-5x"></i></a></div>
+            <div><a href="https://github.com/CyanNyan"><i class="fa fa-github fa-5x"></i></a></div>
+            <div><a href="https://www.twitch.tv/cyannyan39"><i class="fa fa-video-camera fa-5x"></i></a></div>
+            <div><a href="https://discord.gg/jTjZVWJfw5"><i class="fa fa-gamepad fa-5x"></i></a></div>
+            <div><a href="https://t.me/vtbcyan"><i class="fa fa-paper-plane fa-5x"></i></a></div>
+          </div>
+          </div>
+        <!-- <form method="POST" action="{{ .Site.Params.contact_form_action }}" data-toggle="validator">
           <div class="form-container row wow fadeInUp" data-wow-duration="1.5s">
             <div class="form-group col-lg-6">
               <input class="form-control" type="text" name="username" id="username" placeholder="Name" required>
@@ -478,20 +489,20 @@
               <button class="submit form-control hvr-icon-push" type="submit" value="send"> {{ i18n "send" }} </button>
             </div>
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
     <div class="row">
       <div class="footer col-lg-10 offset-lg-1">
         <hr>
-        <ul class="footer-icons list-inline">
+        <!-- <ul class="footer-icons list-inline">
           {{ range .Site.Params.social }}
           <li><a href="{{ .link | safeURL }}" target="_blank"><i class="fab {{ .icon }} fa-inverse fa-2x"></i></a></li>
           {{ end }}
         </ul>
         <div class="to-top">
           <a href="#home"><i class="fa fa-chevron-up"></i></a>
-        </div>
+        </div> -->
         <div class="credit">
           <i class="fas fa-copyright"></i> {{ .Site.Params.copyright | markdownify }}
         </div>

@@ -58,21 +58,6 @@ URL = "#about"
 weight = 2
 
 [[menu.main]]
-name = "Service"
-URL = "#service"
-weight = 3
-
-[[menu.main]]
-name = "Portfolio"
-URL = "#portfolio"
-weight = 4
-
-[[menu.main]]
-name = "Testimonial"
-URL = "#testimonial"
-weight = 5
-
-[[menu.main]]
 name = "Contact"
 URL = "#contact"
 weight = 6
