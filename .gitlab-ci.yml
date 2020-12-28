@@ -13,8 +13,9 @@ image: registry.gitlab.com/pages/hugo:latest
 pages:
   script:
   - hugo --source exampleSite --baseURL https://cyannyan.com/ --themesDir ../.. --destination public
+  - mv exampleSite/public public
   artifacts:
     paths:
-    - exampleSite/public
+    - public
   only:
   - master
