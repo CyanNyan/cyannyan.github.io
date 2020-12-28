@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cyannyan.com/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://cyannyan.com/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cyannyan.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cyannyan.com/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://cyannyan.com/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cyannyan.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cyannyan.com/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://cyannyan.com/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cyannyan.com/tags/"
+                />
+  </url>
+  
+</urlset>
