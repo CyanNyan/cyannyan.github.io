@@ -3,7 +3,7 @@ baseURL = "https://examplesite.com"
 title = "Somrat | Hugo Portfolio Template"
 theme = "somrat"
 # disable language
-disableLanguages = [] # disable language from here
+disableLanguages = ["Fr"] # disable language from here
 
 ############################# Plugins ##############################
 

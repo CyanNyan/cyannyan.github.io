@@ -1785,7 +1785,8 @@ textarea.form-control::-webkit-input-placeholder,
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: #fff;
-  padding: 30px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .footer-icons .fa:hover {
