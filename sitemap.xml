@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <sitemap>
-    <loc>https://cyannyan.com/en/sitemap.xml</loc>
-    
-  </sitemap>
+  <url>
+    <loc>https://cyannyan.com/categories/</loc>
+  </url>
   
-  <sitemap>
-    <loc>https://cyannyan.com/fr/sitemap.xml</loc>
-    
-  </sitemap>
+  <url>
+    <loc>https://cyannyan.com/</loc>
+  </url>
   
-</sitemapindex>
+  <url>
+    <loc>https://cyannyan.com/tags/</loc>
+  </url>
+  
+</urlset>
