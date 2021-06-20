@@ -13,7 +13,7 @@ hero:
     - "images/slider/slider-1.jpg"
     # TODO: add more bakcground
     # TODO: turn up brightness
-    # - "images/slider/slider-2.jpg"
+    - "images/slider/slider-2.jpg"
     # - "images/slider/slider-3.jpg"
 
   # button
@@ -21,7 +21,7 @@ hero:
   button:
     enable : true
     label : "See Me on YouTube"
-    link : "https://www.youtube.com/channel/UC9wbdkwvYVSgKtOZ3Oov98g"
+    link : "https://cyannyan.com/youtube"
 
 
 ####################### Full screen navigation #####################
@@ -43,7 +43,7 @@ about:
     # TODO: center the text
     enable : true
     label : "Subscribe to my channels"
-    link : "https://www.youtube.com/channel/UC9wbdkwvYVSgKtOZ3Oov98g" # you can put your cv in static folder and give the path here.
+    link : "https://cyannyan.com/magic" # you can put your cv in static folder and give the path here.
 
 # ###########################3 Experience ##############################
 # experience:
@@ -91,143 +91,75 @@ about:
 #       percentage : "70%"
 
 
-# ################################### Service ##############################3
-# service:
-#   enable : true
-#   title : "What I do"
-#   service_list:
-#     # service item loop
-#     # TODO: find icon
-#     - name : "Code Fun Stuff!"
-#       image : "images/icons/web-development.png"
+################################### Service ##############################3
+service:
+  enable : true
+  title : "What I do"
+  service_list:
+    # service item loop
+    # TODO: find icon
+    - name : "Code Fun Stuff!"
+      image : "images/icons/web-development.jpg"
+      link : "https://youtu.be/AS_Z6eQdnh4"
       
-#     # service item loop
-#     - name : "Draw Anime Girls!"
-#       image : "images/icons/graphic-design.png"
+    # service item loop
+    - name : "Do Cool Challenge"
+      image : "images/icons/linux.png"
+      link: "https://youtu.be/up6F-uPjq88"
       
-#     # service item loop
-#     - name : "Play Guitar!"
-#       image : "images/icons/dbms.png"
-      
-#     # service item loop
-#     - name : "Host/Play Minecraft Server!"
-#       image : "images/icons/software-development.png"
-      
-#     # service item loop
-#     - name : "Stream on YouTube and Twitch!"
-#       image : "images/icons/marketing.png"
-      
-#     # service item loop
-#     - name : "Make Friends with Hooman"
-#       image : "images/icons/mobile-app.png"
+    # service item loop
+    - name : "Draw Anime Girls!"
+      image : "images/icons/drawing.jpg"
+      link: "https://youtu.be/PxpqD0eQLk0"
 
+      
+    # service item loop
+    - name : "Stream on YouTube and Twitch!"
+      image : "images/icons/marketing.png"
+      link: "https://cyannyan.com/osu"
 
-# ############################## call to action #########################
-# call_to_action:
-#   enable : true
-#   bg_image : "images/backgrounds/need-service.jpg"
-#   title : "NEED A NEKO WAIFU?"
-#   button:
-#     enable : true
-#     label : "SAY HELLO!"
-#     link : "#contact"
+    # service item loop
+    - name : "Host/Play Minecraft Server!"
+      image : "images/icons/software-development.jpg"
+      link: "https://youtu.be/YX_4mfu4CtA"
 
+    # service item loop
+    - name : "Make Friends with Hooman"
+      image : "images/icons/collab.png"
+      link: "https://youtu.be/B0Fg7KYlQsI"
+
+############################## call to action #########################
+call_to_action:
+  enable : true
+  bg_image : "images/backgrounds/need-service.jpg"
+  title : "YOU UP FOR HACKER NEKO?"
+  button:
+    enable : true
+    label : "GET HER!"
+    link : "#contact"
 
 # ############################# portfolio ################################
 # portfolio:
 #   enable : true
-#   title : "PORTFOLIO"
-#   portfolio_list:
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item1.jpg"
-#       date : "Feb 2018"
-#       category : "Web Development"
+#   title : "My Streaming Schedule"
+#   name1 : " osu! Multi"
+#   image1 : "images/icons/marketing.png"
       
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item2.jpg"
-#       date : "Feb 2018"
-#       category : "Web Development"
+#   name2 : "Leetcode!"
+#   image2 : "images/icons/web-development.png"
       
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item3.jpg"
-#       date : "Feb 2018"
-#       category : "Web Development"
+#   name3 : "Drawing"
+#   image3 : "images/icons/graphic-design.png"
       
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item4.jpg"
-#       date : "Feb 2018"
-#       category : "Web Development"
+#   name4 : "Minecraft"
+#   image4 : "images/icons/software-development.png"
       
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item5.jpg"
-#       date : "Feb 2018"
-#       category : "Web Development"
+#   name5 : "Coding Project"
+#   image5 : "images/icons/web-development.png"
       
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item6.jpg"
-#       date : "Feb 2018"
-#       category : "Web Development"
+#   name6 : "TBD"
+#   image6 : "images/icons/cyber2.png"
       
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item7.jpg"
-#       date : "Feb 2018"
-#       category : "Graphics"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item8.jpg"
-#       date : "Feb 2018"
-#       category : "Graphics"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item9.jpg"
-#       date : "Feb 2018"
-#       category : "Database"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item10.jpg"
-#       date : "Feb 2018"
-#       category : "Database"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item11.jpg"
-#       date : "Feb 2018"
-#       category : "Database"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item12.jpg"
-#       date : "Feb 2018"
-#       category : "Graphics"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item13.jpg"
-#       date : "Feb 2018"
-#       category : "Graphics"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item14.jpg"
-#       date : "Feb 2018"
-#       category : "Graphics"
-      
-#     # portfolio item loop
-#     - name : "Project <br> Title"
-#       image : "images/portfolio/item15.jpg"
-#       date : "Feb 2018"
-#       category : "Graphics"
-
 
 # ################################# Testimonial #########################33
 # testimonial:

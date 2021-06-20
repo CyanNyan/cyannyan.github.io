@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
-title = "Somrat | Hugo Portfolio Template"
+title = "Cyan Nyan | The Hacker Neko VTuber"
 theme = "somrat"
 # disable language
 disableLanguages = ["Fr"] # disable language from here
@@ -42,6 +42,8 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 [[params.plugins.js]]
 link = "plugins/owl-carousel/owl.carousel.min.js"
+[[params.plugins.js]]
+link = "plugins/fontawesome/js/all.min.js"
 
 
 ############################## navigation ###############################
@@ -52,10 +54,21 @@ name = "Home"
 URL = "#home"
 weight = 1
 
+
 [[menu.main]]
 name = "About me"
 URL = "#about"
-weight = 2
+weight = 3
+
+[[menu.main]]
+name = "Portfolio"
+URL = "#portfolio"
+weight = 4
+
+[[menu.main]]
+name = "Say Hi"
+URL = "#call_to_action"
+weight = 5
 
 [[menu.main]]
 name = "Contact"

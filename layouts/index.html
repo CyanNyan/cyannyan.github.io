@@ -188,7 +188,7 @@
 <!-- =============================
       Start Services
     =============================== -->
-<!-- <section class="services" id="service">
+<section class="services" id="service">
   {{ if $data.homepage.service.enable }}
   {{ with $data.homepage.service }}
   <div class="container">
@@ -205,11 +205,8 @@
             {{ range .service_list }}
             <div class="col-lg-6 col-sm-6">
                 <div class="service-label">
-                    <span class="fas fa-stack fa-2x" style="font-size: 2em; color: #6f6f6f;">
-                        <i class="fas fa-square fa-stack-2x"></i>
-                        <i class="fas fa-xs fa-stack-1x fa-{{ .icon }} fa-inverse"></i>
-                    </span>
-                    <h4 style="margin-top:10px">{{ .name | markdownify }}</h4>
+                  <a href="{{ .link }}"><img class="img-fluid" src="{{ .image | absURL }}"></a>
+                  <h4 style="margin-top:10px">{{ .name | markdownify }}</h4>
                 </div>
                 <p class="service-description">{{ .description | markdownify }}</p>
             </div>
@@ -236,7 +233,7 @@
   </div>
   {{ end }}
   {{ end }}
-</section> -->
+</section>
  <!-- TODO: add back services -->
 <!-- =============================
        End Services
@@ -313,8 +310,8 @@
       {{ end }}
       {{ end }}
     </div> -->
-  </div>
-</section>
+  <!-- </div>
+</section> -->
 <!-- =============================
       End About Me
     =============================== -->
@@ -322,7 +319,7 @@
     
 <!-- =============================
       Start Certification
-    =============================== -->
+    =============================== --> 
 <!-- <section class="certifications" id="certification">
   {{ if $data.homepage.certification.enable }}
   {{ with $data.homepage.certification }}
@@ -341,8 +338,8 @@
                 <img class="certification-img img-fluid" src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
                 <h4 style="margin-top:10px">{{ .name | markdownify }}</h4>
               </div> -->
-              <!--<div class="certification-label">{{ .name | markdownify }}</div>-->
-            <!-- </div>
+              <!-- <div class="certification-label">{{ .name | markdownify }}</div>
+            </div>
             {{ end }}
           </div>
         </div>
@@ -352,7 +349,7 @@
   {{ end }}
   {{ end }}
 
-</section> -->
+</section>  -->
 <!-- =============================
        End Certifications
     =============================== -->
@@ -360,49 +357,63 @@
 <!-- =============================
        Start Portfolio
     =============================== -->
-<!-- {{ if $data.homepage.portfolio.enable }}
+{{ if $data.homepage.portfolio.enable }}
 {{ with $data.homepage.portfolio }}
 <section class="portfolio" id="portfolio">
   <div class="container-fluid text-center">
     <div class="row portfolio-holder text-left">
       <div class="col-12 text-center">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
-        <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
-          <ul class="portfolio-navigation">
-            <li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
-            {{ $categories := slice }}
-            {{ range .portfolio_list }}
-            {{ $categories = $categories | append .category }}
-            {{ end }}
-            {{ range ( $categories | uniq ) }}
-            <li data-filter="{{ . | urlize }}" class="hvr-sweep-to-right">{{ . | humanize }}</li>
-            {{ end }}
-          </ul>
-        </div>
+        <!-- <h4 class="portfolio-holder"> Both YouTube and Twitch, at the same time, Pacific Time(PST)</h4> -->
       </div>
-      <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
-        <div class="row filtr-container wow fadeInUp list" data-wow-duration="1.5s">
-          {{ range .portfolio_list }}
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .category | urlize }}">
-            <div class="item-holder">
-              <a href="{{ .image | absURL }}" title="{{ .name | safeHTML }}">
-                  <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}">
-                <div class="item-caption">
-                  <h2>{{ .name | safeHTML }}</h2>
-                  <p>{{ .category | title }}</p>
-                  <div class="item-created">{{ .date }}</div>
-                </div>
-              </a>
-            </div>
+      <div class="timetable">
+        <div class="week-names">
+          <div class="accent-pink-gradient">monday</div>
+          <div class="accent-orange-gradient">tuesday</div>
+          <div class="accent-green-gradient">wednesday</div>
+          <div class="accent-cyan-gradient">thursday</div>
+          <div class="accent-purple-gradient">friday</div>
+          <div class="accent-pink-gradient">saturday</div>
+          <div class="accent-orange-gradient">sunday</div>
+        </div>
+        <div class="time-interval">
+          <div>7:00 - 9:00</div>
+          <div>16:00 - 18:00</div>
+        </div>
+        <div class="content">
+          <div>
           </div>
-          {{ end }}
+          <div>
+            <img class="img-fluid" src="{{ .image2 | absURL }}">
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="weekend"></div>
+          <div class="weekend"></div>
+          <div>            
+            <img class="img-fluid" src="{{ .image1 | absURL }}"></div>
+          <div></div>
+          <div>
+            <img class="img-fluid" src="{{ .image3 | absURL }}">
+          </div>
+          <div>
+          </div>
+          <div>
+            <img class="img-fluid" src="{{ .image4 | absURL }}">
+          </div>
+          <div class="weekend">
+            <img class="img-fluid" src="{{ .image5 | absURL }}">
+          </div>
+          <div class="weekend">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-{{ end }} -->
+{{ end }}
 <!-- =============================
        End Portfolio
     =============================== -->
@@ -463,12 +474,12 @@
       <div class="contact-holder">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ $data.homepage.contact.title }}</h1>
           <div class="footer-icons">
-            <div><a href="https://twitter.com/CyanNyan6"><i class="fa fa-twitter fa-5x"></i></a></div>
-            <div><a href="https://www.youtube.com/channel/UC9wbdkwvYVSgKtOZ3Oov98g"><i class="fa fa-youtube fa-5x"></i></a></div>
-            <div><a href="https://github.com/CyanNyan"><i class="fa fa-github fa-5x"></i></a></div>
-            <div><a href="https://www.twitch.tv/cyannyan39"><i class="fa fa-video-camera fa-5x"></i></a></div>
-            <div><a href="https://discord.gg/jTjZVWJfw5"><i class="fa fa-gamepad fa-5x"></i></a></div>
-            <div><a href="https://t.me/vtbcyan"><i class="fa fa-paper-plane fa-5x"></i></a></div>
+            <div><a href="https://cyannyan.com/twitter"><i class="fab fa-twitter fa-5x"></i></a></div>
+            <div><a href="https://cyannyan.com/youtube"><i class="fab fa-youtube fa-5x"></i></a></div>
+            <div><a href="https://github.com/CyanNyan"><i class="fab fa-github fa-5x"></i></a></div>
+            <div><a href="https://cyannyan.com/twitch"><i class="fab fa-video-camera fa-5x"></i></a></div>
+            <div><a href="https://cyannyan.com/discord"><i class="fab fa-discord fa-5x"></i></a></div>
+            <div><a href="https://cyannyan.com/telegram"><i class="fab fa-paper-plane fa-5x"></i></a></div>
           </div>
           </div>
         <!-- <form method="POST" action="{{ .Site.Params.contact_form_action }}" data-toggle="validator">
