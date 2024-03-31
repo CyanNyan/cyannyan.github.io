@@ -6,6 +6,42 @@
     <description>Recent content on Cyan Nyan | The Hacker Neko VTuber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright><atom:link href="https://cyannyan.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <atom:link href="https://cyannyan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://cyannyan.com/discord/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cyannyan.com/discord/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://cyannyan.com/telegram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cyannyan.com/telegram/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://cyannyan.com/twitch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cyannyan.com/twitch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://cyannyan.com/twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cyannyan.com/twitter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://cyannyan.com/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://cyannyan.com/youtube/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
