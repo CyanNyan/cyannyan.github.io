@@ -42,38 +42,9 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 [[params.plugins.js]]
 link = "plugins/owl-carousel/owl.carousel.min.js"
-[[params.plugins.js]]
-link = "plugins/fontawesome/js/all.min.js"
 
 
 ############################## navigation ###############################
-
-# main menu
-[[menu.main]]
-name = "Home"
-URL = "#home"
-weight = 1
-
-
-[[menu.main]]
-name = "About me"
-URL = "#about"
-weight = 3
-
-[[menu.main]]
-name = "Portfolio"
-URL = "#portfolio"
-weight = 4
-
-[[menu.main]]
-name = "Say Hi"
-URL = "#call_to_action"
-weight = 5
-
-[[menu.main]]
-name = "Contact"
-URL = "#contact"
-weight = 6
 
 
 #################### default parameters ################################
@@ -87,6 +58,8 @@ author = "somrat"
 contact_form_action = "" # contact form works with https://formspree.io
 # Google analytics
 google_analytics_id = "" # your id
+copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+
 
 # Preloader
 [params.preloader]
@@ -94,25 +67,6 @@ enable = true
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
   
 ############################# social site ########################
-[[params.social]]
-icon = "fa-facebook-f" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.facebook.com/somrat.mac"
-
-[[params.social]]
-icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://twitter.com/somrat_37"
-
-[[params.social]]
-icon = "fa-instagram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.instagram.com/somrat_sorkar/"
-
-[[params.social]]
-icon = "fa-github" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://github.com/Somrat37"
-
-[[params.social]]
-icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.linkedin.com/in/somrat-sorkar-872581158/"
 
 
 ################################### English language #####################################
@@ -121,17 +75,9 @@ languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
+# copyright
+copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+
+[languages.en.params]
 home = "Home"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
 
-
-################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
-home = "Accueil"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
